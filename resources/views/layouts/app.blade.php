@@ -49,7 +49,7 @@
 
     @include('layouts.menu')
 
-    {{-- @include('widgets.ads1') --}}
+    @include('widgets.ads1')
 
     @yield('content')
 
