@@ -49,7 +49,7 @@
                       @endforeach
 
 
-                        <ul class="pagination">
+                        {{-- <ul class="pagination">
                             <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
                             <li class="active"><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
@@ -57,7 +57,7 @@
                             <li><a href="#">4</a></li>
                             <li><a href="#">5</a></li>
                             <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
-                        </ul>
+                        </ul> --}}
                     </div>
                     <!-- Start Sidebar -->
                     <div class="col-md-3 sidebar">
