@@ -117,6 +117,12 @@ $(document).ready(function() {
             {!! Form::label('merek', 'Merek') !!} <strong class="text-danger"> *</strong>
             <select name="merek" class="form-control" id="merek" required>
               <option value="">--Pilih Merek--</option>
+                @php
+                    $merek = \App\Merek::all();
+                @endphp
+@foreach($merek as $m)
+<option value="{{$m->id}}">{{$m->merek}}</option>
+@endforeach
             </select>
             @if ($errors->has('merek'))
                 <span class="help-block">
@@ -128,6 +134,12 @@ $(document).ready(function() {
             {!! Form::label('design', 'Model') !!} <strong class="text-danger"> *</strong>
             <select name="design" id="design" class="form-control" required>
                <option>--Pilih Model--</option>
+                @php
+    $design = \App\Design::all();
+                @endphp
+@foreach($design as $d)
+<option value="{{$d->id}}">{{$d->design}}</option>
+@endforeach
              </select>
             @if ($errors->has('design'))
                 <span class="help-block">
@@ -139,6 +151,12 @@ $(document).ready(function() {
             {!! Form::label('tipe', 'Tipe') !!} <strong class="text-danger"> *</strong>
             <select name="tipe" id="tipe" class="form-control" required>
                <option>--Pilih Tipe--</option>
+                @php
+    $tipe = \App\Tipe::all();
+                @endphp
+@foreach($tipe as $t)
+<option value="{{$t->id}}">{{$t->tipe}}</option>
+@endforeach
              </select>
             @if ($errors->has('tipe_id'))
                 <span class="help-block">
