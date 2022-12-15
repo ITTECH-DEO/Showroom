@@ -97,8 +97,8 @@
                 <!-- Recently Listed Vehicles -->
                 @include('widgets.etalase-mobil-baru')
                 <div class="spacer-60"></div>
-                @include('widgets.etalase-mobil-bekas')
-                <div class="spacer-60"></div>
+{{--                @include('widgets.etalase-mobil-bekas')--}}
+{{--                <div class="spacer-60"></div>--}}
                 @include('widgets.etalase-berita')
             </div>
             <div class="spacer-50"></div>

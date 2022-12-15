@@ -1,7 +1,7 @@
 <section class="listing-block recent-vehicles">
   <div class="listing-header">
     <a href="/mobil-baru" class="btn btn-sm btn-default pull-right">Semua Mobil Baru</a>
-      <h3>Mobil Baru</h3>
+      <h3>Stock Mobil</h3>
     </div>
     <div class="listing-container">
         <div class="carousel-wrapper">
