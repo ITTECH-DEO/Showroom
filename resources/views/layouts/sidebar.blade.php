@@ -75,8 +75,8 @@
           <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-          <li id="menu-mobil-baru"><a href="/dashboard/slot/mobil-baru"><i class="fa fa-car"></i> Mobil Baru</a></li>
-          <li id="menu-mobil-bekas"><a href="/dashboard/slot/mobil-bekas"><i class="fa fa-cab"></i> Mobil Bekas</a></li>
+          <li id="menu-mobil-baru"><a href="/dashboard/slot/mobil-baru"><i class="fa fa-car"></i> Stock Mobil</a></li>
+{{--          <li id="menu-mobil-bekas"><a href="/dashboard/slot/mobil-bekas"><i class="fa fa-cab"></i> Mobil Bekas</a></li>--}}
         </ul>
       </li>
 
