@@ -10,9 +10,9 @@ class City extends Model
       'city', 'slug'
   ];
 
-  // public function spesifikasi_mobil_baru()
-  //   {
-  //       return $this->hasMany('App\SpesifikasiMobilBaru', 'city_id');
-  //   }
+  public function spesifikasi_mobil_baru()
+    {
+        return $this->hasMany('App\SpesifikasiMobilBaru', 'city_id');
+    }
 
 }

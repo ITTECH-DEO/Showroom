@@ -61,10 +61,10 @@ class HomeController extends Controller
     public function getSpecMobilBaru($city,$slug)
     {
         $city_slug = City::where('slug', $city)->first();
-        return $city_slug;
+      
         $mobil_baru = SpesifikasiMobilBaru::where('slug', $slug)->first();
         $spec = SlotMobilBaru::where('city_id', $city_slug->id)->first();
-        return $spec;
+     
         //$mobil_baru = SpesifikasiMobilBaru::where('slug', $slug)->first();
         $price = PriceMobilBaru::where('city_id', $city_slug->id)->where('merek_id', $mobil_baru->merek_id)
                     ->where('design_id', $mobil_baru->design_id)->where('tipe_id', $mobil_baru->tipe_id)->first();
