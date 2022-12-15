@@ -10,7 +10,7 @@
 <script src="{!! asset('mytuta/js/slot-mobil-baru/create.slot.mobil.baru.js') !!}"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-    $('#cdata').DataTable();
+    // $('#cdata').DataTable();
     //menu active
     $('#menu-slot').addClass("active");
     $('#menu-mobil-baru').addClass("active");
@@ -45,7 +45,7 @@ $(document).ready(function() {
 <li>Dashboard</li>
 <li>Slot</li>
 <li>Mobil Baru</li>
-<li class="active">Ganti Slot Mobil Baru</li>
+<li class="active">Edit Slot Mobil</li>
 @endsection
 
 @section('content')
@@ -221,7 +221,7 @@ $(document).ready(function() {
             <td>{{ $value->email }}</td>
             <td>{{ $value->username }}</td>
             <td>{{ $value->phone }}</td>
-            <td>{{ $value->city->city }}</td>
+{{--            <td>{{ $value->city->city }}</td>--}}
             <td>{{ $value->role == 'admin' ? 'Administrator' : 'Pengguna' }}</td>
             <td>
               <input type="hidden" value="{{$value->name}}" id="user-name">
